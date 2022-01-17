@@ -21,8 +21,47 @@ Deliverables:
 
 ## Results:
 
+![results_table](https://user-images.githubusercontent.com/27740513/149702118-e97389af-6732-45aa-8650-567ac53fdc5f.png)
+
 Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all six machine learning models. Use screenshots of your outputs to support your results.
+
+1. Precision: Precision is the measure of how reliable a positive classification is. From our results, the precision for the high risk loan applications is:
+
+- 1.00 : Logistic Regression
+- 0.01 : Random Oversample
+- 0.01 : SMOTE Oversample
+- 0.01 : Undersample
+- 0.01 : SMOTEEN
+- 0.04 : Random Forest Classifier
+- 0.07 : AdaBoost
+
+A low precision is indicative of a large number of false positives.
+
+2. Recall: Recall is the ability of the classifier to find all the positive samples. It can be determined by the ratio of high risk loans:
+
+- 1.00 : Logistic Regression
+- 0.63 : Random Oversample
+- 0.61 : SMOTE Oversample
+- 0.61 : Undersample
+- 0.59 : SMOTEEN
+- 0.91 : Random Forest Classifier
+- 0.91 : AdaBoost
+
+A low recall is indicative of a large number of false negatives.
+
+3. F1 score: F1 score is a weighted average of the true positive rate (recall) and precision, where the best score is 1.0 and the worst is 0.0.
+
+- 1.00 : Logistic Regression
+- 0.81 : Random Oversample
+- 0.80 : SMOTE Oversample
+- 0.62 : Undersample
+- 0.74 : SMOTEEN
+- 0.95 : Random Forest Classifier
+- 0.97 : AdaBoost
+
 
 ## Summary:
 
 Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
+
+Recommend using the AdaBoost model. This model returns a higher sensitivity and precision which returns a higher f1 score. This model has a higher balance score while also being more accurate at predicting high risk loans.
